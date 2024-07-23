@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div @click="openWhatsApp">
+        <div @click="openWhatsApp" class="cursor-pointer">
             <slot />
         </div>
     </div>
@@ -11,7 +11,7 @@ export default {
     name: 'WhatsAppLink',
     methods: {
         openWhatsApp() {
-            const phoneNumber = '6285649262224';  // Replace with the actual phone number
+            const phoneNumber = '628563542066';  // Replace with the actual phone number
             const message = 'Yudhistira Lawfirm Jajal Arep tekon titik';
             const urlEncodedMessage = encodeURIComponent(message);
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${urlEncodedMessage}`;

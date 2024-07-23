@@ -1,0 +1,8 @@
+.hubungi-kami {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    @apply cursor-pointer bg-slate-100
+}
+
+.hubungi-kami:hover {
+    @apply bg-yellow-500
+}

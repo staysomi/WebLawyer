@@ -7,8 +7,8 @@ const content = ref(1)
 
 const contentChange = (num) => {
   content.value = num
+  console.log(content.value)
 }
-
 </script>
 <template>
   <div class="flex justify-around sticky top-0 w-full">
@@ -52,20 +52,11 @@ export default {
   @apply h-full items-center flex px-8 cursor-pointer
 }
 
-.navigation-item.active {
+.active {
   @apply text-[#fc9e4f]
 }
 
 .navigation-item:hover {
   @apply opacity-60 bg-slate-100 text-[#fc9e4f] h-full
-}
-
-.hubungi-kami {
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  @apply cursor-pointer bg-slate-100
-}
-
-.hubungi-kami:hover {
-  @apply bg-yellow-500
 }
 </style>
