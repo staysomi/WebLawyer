@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-800 text-white p-4 w-full absolute bottom-0">
+  <footer class="bg-gray-800 text-white p-4 w-full sticky bottom-0 z-999">
     <div class="container mx-auto text-center">
       <p>&copy; 2024 My Website. All rights reserved.</p>
     </div>

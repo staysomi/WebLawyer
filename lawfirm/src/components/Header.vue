@@ -11,7 +11,7 @@ const contentChange = (num) => {
 }
 </script>
 <template>
-  <div class="flex justify-around sticky top-0 w-full">
+  <div class="flex justify-around sticky top-0 w-full z-10 bg-white">
     <img src="../assets/img/icon.JPG" class="w-24 h-auto pt-4">
     <div class="flex justify-center" style="align-items: center;">
       <router-link to="/" class="navigation-item">
