@@ -1,13 +1,29 @@
 <template>
-<div class="home">
-    <h2>Home Page</h2>
-    <p>Welcome to the home page.</p>
-</div>
+    <div class="home">
+        <div class="grid grid-cols-2 items-center">
+            <div v-show="isVisible" class="animate-slideInFromLeft">
+                <div>Your Legal Advisor</div>
+            </div>
+            <div v-show="isVisible" class="animate-slideInFromRight">
+                <div>
+                    <img src="../assets/img/foto.JPG">
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
 export default {
-name: 'Home'
+    name: 'Home',
+    data() {
+        return {
+            isVisible: false
+        }
+    },
+    mounted() {
+        this.isVisible = true;
+    }
 }
 </script>
 

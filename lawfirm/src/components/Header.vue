@@ -14,23 +14,25 @@ const contentChange = (num) => {
   <div class="flex justify-around sticky top-0 w-full">
     <img src="../assets/img/icon.JPG" class="w-24 h-auto pt-4">
     <div class="flex justify-center" style="align-items: center;">
-      <div class="navigation-item" :class="{active: content === 1}" @click="contentChange(1)">
-        <router-link to="/" class="block">Beranda</router-link>
-      </div>
-      <div class="navigation-item" :class="{active: content === 2}" @click="contentChange(2)">
-        <router-link to="/layanan-kami" class="block">Layanan Kami</router-link>
-      </div>
-      <div class="navigation-item" :class="{active: content === 3}" @click="contentChange(3)">
-        <router-link to="/tim-kami" class="block">Tim Kami</router-link>
-      </div>
-      <div class="navigation-item" :class="{active: content === 4}" @click="contentChange(4)">
-        <router-link to="/hubungi-kami" class="block">Hubungi Kami</router-link>
-      </div>
+      <router-link to="/" class="navigation-item">
+        <div :class="{ active: content === 1 }" @click="contentChange(1)">Beranda</div>
+      </router-link>
+      <router-link to="/layanan-kami" class="navigation-item">
+        <div :class="{ active: content === 2 }" @click="contentChange(2)">Layanan Kami</div>
+      </router-link>
+      <router-link to="/tim-kami" class="navigation-item">
+        <div :class="{ active: content === 3 }" @click="contentChange(3)">Tim Kami</div>
+      </router-link>
+      <router-link to="/hubungi-kami" class="navigation-item">
+        <div :class="{ active: content === 4 }" @click="contentChange(4)">Hubungi Kami</div>
+      </router-link>
     </div>
     <div style="display: flex; align-items: center;">
       <WA>
         <div class="hubungi-kami flex items-center rounded-full min-h-4 px-6 py-2">
-            <div style="height: fit-content; ">0812-999-9999<br><p style="font-size: smaller; margin:auto">Mulai Konsultasi</p></div>
+          <div style="height: fit-content; ">0812-999-9999<br>
+            <p style="font-size: smaller; margin:auto">Mulai Konsultasi</p>
+          </div>
         </div>
       </WA>
     </div>
@@ -43,23 +45,27 @@ export default {
   name: 'Header'
 }
 </script>
-  
+
 <style scoped>
-  .navigation-item{
-    transition: color 0.3s ease, transform 0.3s ease;
-    @apply h-full items-center flex px-8 cursor-pointer
-  }
-  .navigation-item.active{
-    @apply text-[#fc9e4f]
-  }
-  .navigation-item:hover{
-    @apply opacity-60 bg-slate-100 text-[#fc9e4f] h-full
-  }
-  .hubungi-kami{
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    @apply cursor-pointer bg-slate-100
-  }
-  .hubungi-kami:hover{
-    @apply bg-yellow-500
-  }
+.navigation-item {
+  transition: color 0.3s ease, transform 0.3s ease;
+  @apply h-full items-center flex px-8 cursor-pointer
+}
+
+.navigation-item.active {
+  @apply text-[#fc9e4f]
+}
+
+.navigation-item:hover {
+  @apply opacity-60 bg-slate-100 text-[#fc9e4f] h-full
+}
+
+.hubungi-kami {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  @apply cursor-pointer bg-slate-100
+}
+
+.hubungi-kami:hover {
+  @apply bg-yellow-500
+}
 </style>
