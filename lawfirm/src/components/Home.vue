@@ -1,11 +1,12 @@
 <script setup>
 import 'vue3-carousel/dist/carousel.css'
 import WA from './LangsungWA.vue'
+// import Slider from './SliderTim.vue'
 
 </script>
 <template>
     <div class="home">
-        <div class="grid grid-cols-2 gap-16 items-center">
+        <div class="grid grid-cols-2 gap-16 items-center z-1 p-4">
             <div v-show="isVisible" class="animate-slideInFromLeft">
                 <div>
                     <p class="text-6xl font-bold">Your Expert Legal Advisor</p>
@@ -24,15 +25,19 @@ import WA from './LangsungWA.vue'
                     </div>
                 </div>
             </div>
-            <div v-show="isVisible" class="animate-slideInFromRight justify-end flex">
-                <div class="relative">
-                    <img src="../assets/img/foto.JPG" class="w-72">
+            <div v-show="isVisible" class="animate-slideInFromRight justify-end flex p-16">
+                <div class="relative flex justify-end">
+                    <img src="../assets/img/foto.JPG" style="width: 80%;">
                     <div class="nametag absolute bottom-0">
                         <p class="text-xl text-blue-800 font-extrabold">Om Agung Test SPD SPD SPD SPD SPD</p>
                         <p class="text-md">Om Agung Test22222</p>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="bg-blue-600 p-8 text-white">
+            <p>Tim Yudhistira</p>
+            <!-- <Slider class="mt-4"/> -->
         </div>
     </div>
 </template>
