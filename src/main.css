@@ -1,0 +1,35 @@
+body{
+    font-weight: 600;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.hubungi-kami{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    min-height: 50px;
+    padding: 5px 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+.hubungi-kami:hover{
+    background-color: yellow;
+}
+.navigation-item{
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.navigation-item.active{
+    color: #fc9e4f;
+}
+.navigation-item:hover{
+    color: #fc9e4f;
+}
