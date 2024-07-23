@@ -1,7 +1,8 @@
 <script setup>
 import 'vue3-carousel/dist/carousel.css'
 import WA from './LangsungWA.vue'
-// import Slider from './SliderTim.vue'
+import Slider from './SliderTim.vue'
+import Dropdown from './DetailsDropdown.vue'
 
 </script>
 <template>
@@ -27,7 +28,7 @@ import WA from './LangsungWA.vue'
             </div>
             <div v-show="isVisible" class="animate-slideInFromRight justify-end flex p-16">
                 <div class="relative flex justify-end">
-                    <img src="../assets/img/foto.JPG" style="width: 80%;">
+                    <img src="../assets/img/foto.JPG" style="width: 60%;">
                     <div class="nametag absolute bottom-0">
                         <p class="text-xl text-blue-800 font-extrabold">Om Agung Test SPD SPD SPD SPD SPD</p>
                         <p class="text-md">Om Agung Test22222</p>
@@ -37,7 +38,31 @@ import WA from './LangsungWA.vue'
         </div>
         <div class="bg-blue-600 p-8 text-white">
             <p>Tim Yudhistira</p>
-            <!-- <Slider class="mt-4"/> -->
+            <router-link to="/tim-kami">
+                <div
+                    class="cursor-pointer mt-4 py-2 px-4 w-fit h-fit text-sm bg-transparent border border-gray-400 rounded-full text-white">
+                    Tim Kami</div>
+            </router-link>
+            <Slider class="mt-4 flex justify-center" />
+        </div>
+        <div class="text-black py-8 px-[36rem]">
+            Mengapa Harus Ke TantowiLaw
+            <p class="text-2xl">Dilakukan oleh tenaga ahli berintegritas, berfokus pada klien demi hasil maksimal</p>
+            <Dropdown title="1. Jujur" class="cursor-pointer">
+                <p>This is the description text that appears when the dropdown is opened.</p>
+            </Dropdown>
+            <Dropdown title="2. Totalitas" class="cursor-pointer">
+                <p>This is the description text that appears when the dropdown is opened.</p>
+            </Dropdown>
+            <Dropdown title="3. Kredibilitas" class="cursor-pointer">
+                <p>This is the description text that appears when the dropdown is opened.</p>
+            </Dropdown>
+            <Dropdown title="4. Integritas" class="cursor-pointer">
+                <p>This is the description text that appears when the dropdown is opened.</p>
+            </Dropdown>
+            <Dropdown title="5. Tegak Lurus" class="cursor-pointer">
+                <p>This is the description text that appears when the dropdown is opened.</p>
+            </Dropdown>
         </div>
     </div>
 </template>
