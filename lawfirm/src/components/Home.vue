@@ -45,24 +45,27 @@ import Dropdown from './DetailsDropdown.vue'
             </router-link>
             <Slider class="mt-4 flex justify-center" />
         </div>
-        <div class="text-black py-8 px-16 max-w-[50%]">
-            Mengapa Harus Ke TantowiLaw
-            <p class="text-2xl w-fit">Dilakukan oleh tenaga ahli berintegritas, berfokus pada klien demi hasil maksimal</p>
-            <Dropdown title="1. Jujur" class="cursor-pointer">
-                <p>This is the description text that appears when the dropdown is opened.</p>
-            </Dropdown>
-            <Dropdown title="2. Totalitas" class="cursor-pointer">
-                <p>This is the description text that appears when the dropdown is opened.</p>
-            </Dropdown>
-            <Dropdown title="3. Kredibilitas" class="cursor-pointer">
-                <p>This is the description text that appears when the dropdown is opened.</p>
-            </Dropdown>
-            <Dropdown title="4. Integritas" class="cursor-pointer">
-                <p>This is the description text that appears when the dropdown is opened.</p>
-            </Dropdown>
-            <Dropdown title="5. Tegak Lurus" class="cursor-pointer">
-                <p>This is the description text that appears when the dropdown is opened.</p>
-            </Dropdown>
+        <div class="grid grid-cols-2 p-16 mt-16">
+            <img src="../assets/img/kenapaharus.jpg" alt="">
+            <div class="text-black py-8 px-16">
+                Mengapa Harus Ke TantowiLaw
+                <p class="text-2xl w-fit">Dilakukan oleh tenaga ahli berintegritas, berfokus pada klien demi hasil maksimal</p>
+                <Dropdown title="1. Jujur" class="cursor-pointer">
+                    <p>This is the description text that appears when the dropdown is opened.</p>
+                </Dropdown>
+                <Dropdown title="2. Totalitas" class="cursor-pointer">
+                    <p>This is the description text that appears when the dropdown is opened.</p>
+                </Dropdown>
+                <Dropdown title="3. Kredibilitas" class="cursor-pointer">
+                    <p>This is the description text that appears when the dropdown is opened.</p>
+                </Dropdown>
+                <Dropdown title="4. Integritas" class="cursor-pointer">
+                    <p>This is the description text that appears when the dropdown is opened.</p>
+                </Dropdown>
+                <Dropdown title="5. Tegak Lurus" class="cursor-pointer">
+                    <p>This is the description text that appears when the dropdown is opened.</p>
+                </Dropdown>
+            </div>
         </div>
     </div>
 </template>
