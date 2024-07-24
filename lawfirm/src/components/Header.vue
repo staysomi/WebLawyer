@@ -1,10 +1,24 @@
 <script setup>
 import 'vue3-carousel/dist/carousel.css'
-import { ref } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import WA from './LangsungWA.vue'
+import { useRoute } from 'vue-router';
 
-const content = ref(1)
+const route = useRoute();
+const currentPath = computed(() => route.path);
+const setCurrentPath = () => {
+  if (currentPath.value === '/layanan-kami') {
+    content.value = 2
+  } else if (currentPath.value === '/tim-kami'){
+    content.value = 3
+  } else if (currentPath.value === '/hubungi-kami'){
+    content.value = 4
+  }
+  console.log('logs', content.value)
+}
+onMounted(setCurrentPath)
 
+const content = ref()
 const contentChange = (num) => {
   content.value = num
 }

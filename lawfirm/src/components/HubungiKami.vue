@@ -1,5 +1,6 @@
 <template>
     <div class="about p-8">
+        <img src="../assets/img/hubungikami-header.jpg" alt="" class="w-full mb-4">
         <p>Hubungi Kami</p>
         <p class="text-3xl">Untuk informasi lebih lanjut mengenai Yudhistira Law Firm atau layanan kami, silakan
             menghubungi kami tanpa ragu.</p>
