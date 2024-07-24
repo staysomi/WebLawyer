@@ -1,23 +1,35 @@
+
 <template>
     <div class="section-1 px-32 py-8">
-        <p>Tim Kami</p>
-        <p class="text-3xl">INOVASI DAN KOLABORASI DALAM PERSPEKTIF HUKUM</p>
-        <img src="https://placehold.co/600x400" alt="" class="w-full h-80 mt-4">
-        <div class="grid grid-cols-2 justify-start">
-            <div>Visi : Menegakkan Hukum seadil-adilnya serta dapat memberikn keadilan bagi Seluruh Rakyat Indonesia
-            </div>
-            <div>Misi :<br>
-                1. Memberikan bantuan ataupun penyelesaian berazaskan keadilan<br>
-                2. Bersikap profesional dalam menangani setiap perkara<br>
-                3. Transparansi, bersih, tegak lurus
-            </div>
-        </div>
+        <h2 class="text-2xl font-semibold mt-2 ml-2">Tim Kami</h2>
+        <p class="text-4xl font-semibold ml-2 mt-4">INOVASI DAN KOLABORASI <br>DALAM PERSPEKTIF HUKUM</p>
+        <img src="https://placehold.co/600x400" alt="" class="w-full h-80 mt-20">
+
+        <div class="text-xl mt-20 ml-20 mr-10 flex justify-start items-start">
+    <!-- visi 1 -->
+    <div class="text-xl mr-10">
+        <h2 class="font-bold">VISI</h2>
+        <p>Menegakkan Hukum seadil-adilnya serta dapat memberikan <br>keadilan bagi Seluruh Rakyat Indonesia</p>
     </div>
+
+    <!-- misi 2 -->
+    <div class="text-xl">
+        <h2 class="font-bold">MISI</h2>
+        <ul class="list-disc list-inside">
+            <li>Memberikan bantuan ataupun penyelesaian berazaskan keadilan</li>
+            <li>Bersikap profesional dalam menangani setiap perkara</li>
+            <li>Transparansi, bersih, tegak lurus</li>
+        </ul>
+    </div>
+</div>
+    </div>
+
+    
     <div class="section-profile px-32 py-8">
-        <p class="text-3xl">
+        <p class="text-4xl font-semibold ml-20 mt-4">
             SEMUA PROFILE
         </p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem voluptates accusamus
+        <p class="ml-20 mt-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem voluptates accusamus
             quisquam, fugit rem quaerat beatae, dolore ex, soluta totam expedita atque ab natus laudantium cupiditate in
             doloremque commodi?</p>
             <div class="flex justify-around mt-8">

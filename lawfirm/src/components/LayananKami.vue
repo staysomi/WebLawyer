@@ -7,8 +7,8 @@ import Popup from './PopupBio.vue'
 <template>
     <div class="about">
         <h2 class="text-2xl font-semibold mt-10 ml-28">Layanan Kami</h2>
-        <p class="text-5xl font-semibold ml-28 mt-4">Lorem ipsum dolor sit amet,
-        <p class="text-5xl font-semibold ml-28">consectetur adipiscing elit.</p>
+        <p class="text-4xl font-semibold ml-28 mt-4">Lorem ipsum dolor sit amet,
+        <p class="text-4xl font-semibold ml-28">consectetur adipiscing elit.</p>
         </p>
     </div>
 
