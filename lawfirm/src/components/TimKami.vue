@@ -29,7 +29,7 @@
         <p class="text-4xl font-semibold ml-20 mt-4">
             SEMUA PROFILE
         </p>
-        <p class="ml-20 mt-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem voluptates accusamus
+        <p class="ml-20 mt-8 text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem voluptates accusamus
             quisquam, fugit rem quaerat beatae, dolore ex, soluta totam expedita atque ab natus laudantium cupiditate in
             doloremque commodi?</p>
             <div class="flex justify-around mt-8">
