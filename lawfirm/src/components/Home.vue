@@ -45,9 +45,9 @@ import Dropdown from './DetailsDropdown.vue'
             </router-link>
             <Slider class="mt-4 flex justify-center" />
         </div>
-        <div class="text-black py-8 px-[36rem]">
+        <div class="text-black py-8 px-16 max-w-[50%]">
             Mengapa Harus Ke TantowiLaw
-            <p class="text-2xl">Dilakukan oleh tenaga ahli berintegritas, berfokus pada klien demi hasil maksimal</p>
+            <p class="text-2xl w-fit">Dilakukan oleh tenaga ahli berintegritas, berfokus pada klien demi hasil maksimal</p>
             <Dropdown title="1. Jujur" class="cursor-pointer">
                 <p>This is the description text that appears when the dropdown is opened.</p>
             </Dropdown>
@@ -83,7 +83,6 @@ export default {
 
 <style scoped>
 .nametag {
-    transform: translateX(-20%);
     text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.35);
     background-color: transparent;
     background-image: linear-gradient(240deg, #FFFFFF00 11%, #FFFFFF 59%);

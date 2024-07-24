@@ -19,10 +19,10 @@
     <p>{{ popupDescription }}</p>
   </Popup>
 </template>
-
+<script setup>
+import Popup from './PopupBio.vue'
+</script>
 <script>
-
-import Popup from './PopupBio.vue';
 export default {
   components: {
     Popup,
