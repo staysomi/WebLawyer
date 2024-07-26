@@ -6,9 +6,9 @@ import Popup from './PopupBio.vue'
 </script>
 <template>
     <div class="about">
-        <h2 class="text-2xl font-semibold mt-10 ml-5">Layanan Kami</h2>
-        <p class="text-4xl font-semibold ml-5 mt-4">Lorem ipsum dolor sit amet,
-        <p class="text-4xl font-semibold ml-5">consectetur adipiscing elit.</p>
+        <h2 class="text-xl font-semibold mt-10 ml-5">Layanan Kami</h2>
+        <p class="text-2xl font-semibold ml-5 mt-4">Lorem ipsum dolor sit amet,
+        <p class="text-2xl font-semibold ml-5">consectetur adipiscing elit.</p>
         </p>
     </div>
 
@@ -18,18 +18,18 @@ import Popup from './PopupBio.vue'
 
     <div>
 
-        <div class="text-xl mt-20 flex justify-center">
+        <div class="text-sm mt-20 flex justify-center">
             <!-- Konten 1 -->
-            <div class="text-xl ">
+            <div class="text-sm p-2 ">
                 Lorem ipsum dolor sit amet, adipiscing elit.
                 <p>Nullam fringilla nec nisl id vehicula. Curabitur leo ante,</p>
                 <p>ornare ac urna sodales, volutpat egestas ante.</p>
                 <p>Praesent volutpat turpis nibh, vitae posuere erat elementum nec.</p>
                 <div @click="showPopup = true, sendPopupData('LEGALITAS')"
-                    class="cursor-pointer  bg-blue-900 w-40 py-3 rounded-full hover:bg-white border-2 border-white text-center text-white text-base mt-4">
+                    class="cursor-pointer  bg-blue-900 w-40 py-3 rounded-full hover:bg-white border-2 border-white text-center text-white text-sm mt-4">
                     LIHAT LEGALITAS</div>
                 <Popup :isVisible="showPopup" @close="showPopup = false">
-                    <h2 class="text-xl font-bold mb-4 text-white">LEGALITAS</h2>
+                    <h2 class="text-sm font-bold mb-4 text-white">LEGALITAS</h2>
                     <p class="text-medium mb-4 text-white">Akta notaris hmmmmmmmmmmmmmmmmmmmmmmmmmmm <br>
                         Nomor: 18, tanggal : 28 Mei 2024 </p>
                     <p class="text-medium mb-4 font-bold text-white">'Pengesahan Menteri Hukum dan Hak Asasi Manusia
@@ -42,7 +42,7 @@ import Popup from './PopupBio.vue'
             </div>
 
             <!-- Konten 2 -->
-            <div class="text-xl ml-8">
+            <div class="text-sm ml-8 p-2">
                 Lorem ipsum dolor sit amet, adipiscing elit.
                 <p>Nullam fringilla nec nisl id vehicula. Curabitur leo ante,</p>
                 <p>ornare ac urna sodales, volutpat egestas ante.</p>
@@ -53,44 +53,44 @@ import Popup from './PopupBio.vue'
 
 
     <div class="layanan my-10 px-11">
-        <p class="text-3xl font-bold mt-20">SEMUA LAYANAN</p>
-        <Dropdown title="Litgasi dan penyelesaian sengketa" class="cursor-pointer text-2xl">
+        <p class="text-xl font-bold mt-20">SEMUA LAYANAN</p>
+        <Dropdown title="Litgasi dan penyelesaian sengketa" class="cursor-pointer text-sm">
             <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Non-Litgasi" class="cursor-pointer text-2xl">
+        <Dropdown title="Non-Litgasi" class="cursor-pointer text-sm">
             <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Korporasi dan Komersial" class="cursor-pointer text-2xl">
+        <Dropdown title="Korporasi dan Komersial" class="cursor-pointer text-sm">
             <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Hukum Perdata" class="cursor-pointer text-2xl">
+        <Dropdown title="Hukum Perdata" class="cursor-pointer text-sm">
             <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Hukum Perburuhan" class="cursor-pointer text-2xl">
+        <Dropdown title="Hukum Perburuhan" class="cursor-pointer text-sm">
             <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Hukum Properti" class="cursor-pointer text-2xl">
+        <Dropdown title="Hukum Properti" class="cursor-pointer text-sm">
             <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Hukum Keluarga" class="cursor-pointer text-2xl">
+        <Dropdown title="Hukum Keluarga" class="cursor-pointer text-sm">
             <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Hukum Pidana" class="cursor-pointer text-2xl">
+        <Dropdown title="Hukum Pidana" class="cursor-pointer text-sm">
             <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Asisten Pajak" class="cursor-pointer text-2xl">
+        <Dropdown title="Asisten Pajak" class="cursor-pointer text-sm">
             <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Perizinan Usaha" class="cursor-pointer text-2xl">
+        <Dropdown title="Perizinan Usaha" class="cursor-pointer text-sm">
             <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
