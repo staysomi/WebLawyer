@@ -5,7 +5,7 @@
     <div class="relative bg-[url('../assets/img/catur.jpg')] bg-cover bg-center px-16 py-60">
       <div class="absolute inset-0 bg-black opacity-60"></div>
       <Transition name="fade">
-        <div class="relative z-10 p-4 text-white animate-slideInFromBottom">
+        <div class="relative z-8 p-4 text-white animate-slideInFromBottom">
           <p>Langkah Pertama</p>
           <p class="text-3xl">Segera mulai langkah awal menemukan solusi hukum Anda bersama tim ahli kami.</p>
         </div>
