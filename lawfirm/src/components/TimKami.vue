@@ -44,7 +44,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex justify-around mt-8">
+            <div class="flex justify-around mt-8 mb-8">
                 <div v-for="slide in slides.slice(3, 6)">
                     <div class="flex w-full flex-col justify-center items-center">
                         <img src="../assets/img/foto.JPG" alt="Slide Image" class="w-4/5 h-auto" />
