@@ -1,21 +1,21 @@
 
 <template>
-    <div class="section-1 px-32 py-8">
-        <h2 class="text-2xl font-semibold mt-2 ml-2">Tim Kami</h2>
-        <p class="text-4xl font-semibold ml-2 mt-4">INOVASI DAN KOLABORASI <br>DALAM PERSPEKTIF HUKUM</p>
-        <img src="https://placehold.co/600x400" alt="" class="w-full h-80 mt-20">
+    <div class="section-1">
+        <h2 class="text-xl font-semibold mt-10 ml-5">Tim Kami</h2>
+        <p class="text-2xl font-semibold ml-5 mt-4">INOVASI DAN KOLABORASI <br>DALAM PERSPEKTIF HUKUM</p>
+        <img src="https://placehold.co/600x400" alt="" class="w-full h-80 mt-8">
 
-        <div class="text-xl mt-20 ml-20 mr-10 flex justify-start items-start">
+        <div class="text-xl mt-20 ml-20 mr-10 flex justify-center items-start">
     <!-- visi 1 -->
     <div class="text-xl mr-10">
         <h2 class="font-bold">VISI</h2>
-        <p>Menegakkan Hukum seadil-adilnya serta dapat memberikan <br>keadilan bagi Seluruh Rakyat Indonesia</p>
+        <p class="text-sm">Menegakkan Hukum seadil-adilnya serta dapat memberikan <br>keadilan bagi Seluruh Rakyat Indonesia</p>
     </div>
 
     <!-- misi 2 -->
     <div class="text-xl">
         <h2 class="font-bold">MISI</h2>
-        <ul class="list-disc list-inside">
+        <ul class="list-disc list-inside text-sm">
             <li>Memberikan bantuan ataupun penyelesaian berazaskan keadilan</li>
             <li>Bersikap profesional dalam menangani setiap perkara</li>
             <li>Transparansi, bersih, tegak lurus</li>
@@ -25,11 +25,11 @@
     </div>
 
     
-    <div class="section-profile px-32 py-8">
-        <p class="text-4xl font-semibold ml-20 mt-4">
+    <div class="section-profile">
+        <p class="text-xl font-semibold mt-10 ml-5">
             SEMUA PROFILE
         </p>
-        <p class="ml-20 mt-8 text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem voluptates accusamus
+        <p class="ml-5 mt-4 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem voluptates accusamus
             quisquam, fugit rem quaerat beatae, dolore ex, soluta totam expedita atque ab natus laudantium cupiditate in
             doloremque commodi?</p>
             <div class="flex justify-around mt-8">

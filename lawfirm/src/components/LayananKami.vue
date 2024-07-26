@@ -20,7 +20,7 @@ import Popup from './PopupBio.vue'
 
         <div class="text-sm mt-20 flex justify-center">
             <!-- Konten 1 -->
-            <div class="text-sm p-2 ">
+            <div class="text-sm p-4 ">
                 Lorem ipsum dolor sit amet, adipiscing elit.
                 <p>Nullam fringilla nec nisl id vehicula. Curabitur leo ante,</p>
                 <p>ornare ac urna sodales, volutpat egestas ante.</p>
@@ -42,7 +42,7 @@ import Popup from './PopupBio.vue'
             </div>
 
             <!-- Konten 2 -->
-            <div class="text-sm ml-8 p-2">
+            <div class="text-sm ml-8 p-4">
                 Lorem ipsum dolor sit amet, adipiscing elit.
                 <p>Nullam fringilla nec nisl id vehicula. Curabitur leo ante,</p>
                 <p>ornare ac urna sodales, volutpat egestas ante.</p>
