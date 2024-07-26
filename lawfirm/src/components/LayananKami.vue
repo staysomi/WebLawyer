@@ -26,17 +26,19 @@ import Popup from './PopupBio.vue'
                 <p>ornare ac urna sodales, volutpat egestas ante.</p>
                 <p>Praesent volutpat turpis nibh, vitae posuere erat elementum nec.</p>
                 <div @click="showPopup = true, sendPopupData('LEGALITAS')"
-            class="cursor-pointer  bg-blue-900 w-40 py-3 rounded-full hover:bg-white border-2 border-white text-center text-white text-base mt-4">
-            LIHAT LEGALITAS</div>
-     <Popup :isVisible="showPopup" @close="showPopup = false">
-            <h2 class="text-xl font-bold mb-4 text-white">{{ ('LEGALITAS') }}</h2>
-            <p class="text-medium mb-4 text-white">{{ ('Akta notaris hmmmmmmmmmmmmmmmmmmmmmmmmmmm')}} <br>
-             {{ ('Nomor: 18, tanggal : 28 Mei 2024')}}  </p>
-            <p class="text-medium mb-4 font-bold text-white">{{ ('Pengesahan Menteri Hukum dan Hak Asasi Manusia Republik Indonesia')}} </p>
-            <p class="text-medium mb-4 text-white">{{ ('Nomor : AHU-0000656-AH.01.18 Tahun 2024, tanggal 28 Mei 2024')}} <br>
-            {{ ('NPWP : 20.667.326.1-655.000')}} <br>
-            {{ ('Nomor Induk Berusaha (NIB) : 2905240103183')}} </p>
-     </Popup>  
+                    class="cursor-pointer  bg-blue-900 w-40 py-3 rounded-full hover:bg-white border-2 border-white text-center text-white text-base mt-4">
+                    LIHAT LEGALITAS</div>
+                <Popup :isVisible="showPopup" @close="showPopup = false">
+                    <h2 class="text-xl font-bold mb-4 text-white">LEGALITAS</h2>
+                    <p class="text-medium mb-4 text-white">Akta notaris hmmmmmmmmmmmmmmmmmmmmmmmmmmm <br>
+                        Nomor: 18, tanggal : 28 Mei 2024 </p>
+                    <p class="text-medium mb-4 font-bold text-white">'Pengesahan Menteri Hukum dan Hak Asasi Manusia
+                        Republik Indonesia </p>
+                    <p class="text-medium mb-4 text-white">Nomor : AHU-0000656-AH.01.18 Tahun 2024, tanggal 28 Mei
+                        2024<br>
+                        NPWP : 20.667.326.1-655.000 <br>
+                        Nomor Induk Berusaha (NIB) : 2905240103183 </p>
+                </Popup>
             </div>
 
             <!-- Konten 2 -->
@@ -52,8 +54,7 @@ import Popup from './PopupBio.vue'
 
     <div class="layanan my-10 px-24">
         <p class="text-3xl font-bold mt-20">SEMUA LAYANAN</p>
-        <Dropdown title="Litgasi dan penyelesaian sengketa"
-            class="cursor-pointer text-2xl">
+        <Dropdown title="Litgasi dan penyelesaian sengketa" class="cursor-pointer text-2xl">
             <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
@@ -99,23 +100,23 @@ import Popup from './PopupBio.vue'
 
 <script>
 export default {
-  components: {
-    Popup,
-  },
-  data() {
-    return {
-      showPopup: false,
-      popupTitle: '',
-      popupDescription: ''
-    };
-  },
+    components: {
+        Popup,
+    },
+    data() {
+        return {
+            showPopup: false,
+            popupTitle: '',
+            popupDescription: ''
+        };
+    },
 
-  methods: {
-    sendPopupData(title, description){
-      this.popupTitle = title
-      this.popupDescription = description
-    }
-  },
+    methods: {
+        sendPopupData(title, description) {
+            this.popupTitle = title
+            this.popupDescription = description
+        }
+    },
 };
 </script>
 
