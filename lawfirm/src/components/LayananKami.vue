@@ -6,9 +6,9 @@ import Popup from './PopupBio.vue'
 </script>
 <template>
     <div class="about">
-        <h2 class="text-2xl font-semibold mt-10 ml-28">Layanan Kami</h2>
-        <p class="text-4xl font-semibold ml-28 mt-4">Lorem ipsum dolor sit amet,
-        <p class="text-4xl font-semibold ml-28">consectetur adipiscing elit.</p>
+        <h2 class="text-2xl font-semibold mt-10 ml-5">Layanan Kami</h2>
+        <p class="text-4xl font-semibold ml-5 mt-4">Lorem ipsum dolor sit amet,
+        <p class="text-4xl font-semibold ml-5">consectetur adipiscing elit.</p>
         </p>
     </div>
 
@@ -18,17 +18,29 @@ import Popup from './PopupBio.vue'
 
     <div>
 
-        <div class="text-xl mt-20 ml-20 mr-10 flex">
+        <div class="text-xl mt-20 flex justify-center">
             <!-- Konten 1 -->
-            <div class="text-xl mt-auto">
+            <div class="text-xl ">
                 Lorem ipsum dolor sit amet, adipiscing elit.
                 <p>Nullam fringilla nec nisl id vehicula. Curabitur leo ante,</p>
                 <p>ornare ac urna sodales, volutpat egestas ante.</p>
                 <p>Praesent volutpat turpis nibh, vitae posuere erat elementum nec.</p>
+                <div @click="showPopup = true, sendPopupData('LEGALITAS')"
+            class="cursor-pointer  bg-blue-900 w-40 py-3 rounded-full hover:bg-white border-2 border-white text-center text-white text-base mt-4">
+            LIHAT LEGALITAS</div>
+     <Popup :isVisible="showPopup" @close="showPopup = false">
+            <h2 class="text-xl font-bold mb-4 text-white">{{ ('LEGALITAS') }}</h2>
+            <p class="text-medium mb-4 text-white">{{ ('Akta notaris hmmmmmmmmmmmmmmmmmmmmmmmmmmm')}} <br>
+             {{ ('Nomor: 18, tanggal : 28 Mei 2024')}}  </p>
+            <p class="text-medium mb-4 font-bold text-white">{{ ('Pengesahan Menteri Hukum dan Hak Asasi Manusia Republik Indonesia')}} </p>
+            <p class="text-medium mb-4 text-white">{{ ('Nomor : AHU-0000656-AH.01.18 Tahun 2024, tanggal 28 Mei 2024')}} <br>
+            {{ ('NPWP : 20.667.326.1-655.000')}} <br>
+            {{ ('Nomor Induk Berusaha (NIB) : 2905240103183')}} </p>
+     </Popup>  
             </div>
 
             <!-- Konten 2 -->
-            <div class="text-xl mt-auto ml-56 mr-10">
+            <div class="text-xl ml-8">
                 Lorem ipsum dolor sit amet, adipiscing elit.
                 <p>Nullam fringilla nec nisl id vehicula. Curabitur leo ante,</p>
                 <p>ornare ac urna sodales, volutpat egestas ante.</p>
@@ -36,19 +48,6 @@ import Popup from './PopupBio.vue'
             </div>
         </div>
     </div>
-
-    <div @click="showPopup = true, sendPopupData('LEGALITAS')"
-            class="cursor-pointer mt-8 ml-20 bg-blue-900 w-40 py-3 rounded-full hover:bg-white border-2 border-white text-center text-white">
-            LIHAT LEGALITAS</div>
-            <Popup :isVisible="showPopup" @close="showPopup = false">
-    <h2 class="text-xl font-bold mb-4 text-white">{{ ('LEGALITAS') }}</h2>
-    <p class="text-medium mb-4 text-white">{{ ('Akta notaris hmmmmmmmmmmmmmmmmmmmmmmmmmmm')}} <br>
-         {{ ('Nomor: 18, tanggal : 28 Mei 2024')}}  </p>
-         <p class="text-medium mb-4 font-bold text-white">{{ ('Pengesahan Menteri Hukum dan Hak Asasi Manusia Republik Indonesia')}} </p>
-         <p class="text-medium mb-4 text-white">{{ ('Nomor : AHU-0000656-AH.01.18 Tahun 2024, tanggal 28 Mei 2024')}} <br>
-            {{ ('NPWP : 20.667.326.1-655.000')}} <br>
-            {{ ('Nomor Induk Berusaha (NIB) : 2905240103183')}} </p>
-  </Popup>  
 
 
     <div class="layanan my-10 px-24">
