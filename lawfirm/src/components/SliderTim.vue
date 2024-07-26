@@ -2,52 +2,40 @@
   <div class="relative w-full overflow-hidden">
     <div class="flex transition-transform duration-300 ease-in-out"
       :style="{ transform: `translateX(-${currentIndex * (100 / visibleItems)}%)` }">
-      <div v-for="(slide, index) in visibleSlides" :key="index" class="w-1/4 flex-shrink-0 p-2 justify-center">
-        <div class="flex w-full flex-col justify-center">
-          <img src="../assets/img/foto.JPG" alt="Slide Image" class="w-4/5 h-auto" />
+      <div v-for="(item, index) in visibleSlides" :key="index" class="w-full flex-shrink-0 justify-center">
+        <div class="flex w-full flex-col justify-center items-center">
+          <img :src="`src/assets/img/${item.tim}.png`" alt="Slide Image"
+            class="bg-gradient-to-b from-gray-100 to-transparent w-4/5" />
           <p class="text-sm">Advokat</p>
-          <p class="text-lg">Om Agung Test SSSSSSSS</p>
-          <div @click="showPopup = true, sendPopupData(slide, slide + 'sasasasas')"
+          <p class="text-md">{{ item.name }}</p>
+          <router-link :to="item.tim">
+            <div
             class="cursor-pointer mt-4 py-2 px-4 w-fit h-fit text-sm bg-transparent border border-gray-400 rounded-full text-white">
             Lihat Bio</div>
+          </router-link>
         </div>
       </div>
     </div>
   </div>
-  <Popup :isVisible="showPopup" @close="showPopup = false">
-    <h2 class="text-xl font-bold mb-4">{{ popupTitle }}</h2>
-    <p>{{ popupDescription }}</p>
-  </Popup>
 </template>
 <script setup>
-import Popup from './PopupBio.vue'
 </script>
 <script>
 export default {
-  components: {
-    Popup,
-  },
   data() {
     return {
-      showPopup: false,
       currentIndex: 0,
-      visibleItems: 4,
-      slides: [
-        'omagung1',
-        'omagung2',
-        'omagung3',
-        'omagung4',
-        'omagung5',
+      visibleItems: 1,
+      tim: [
+        { tim: 'tim1', name: 'Muchamad Ilham Tantowi. S.H., M.H' },
+        { tim: 'tim2', name: 'Pak Arif. S.H., M.H' }
       ],
       autoSlideInterval: null,
-      popupTitle: '',
-      popupDescription: ''
     };
   },
   computed: {
     visibleSlides() {
-      // Double the array to create the infinite loop effect
-      return this.slides.concat(this.slides);
+      return this.tim.concat(this.tim);
     },
   },
   mounted() {
@@ -59,14 +47,14 @@ export default {
   methods: {
     next() {
       this.currentIndex++;
-      if (this.currentIndex >= this.slides.length) {
+      if (this.currentIndex >= this.tim.length) {
         this.currentIndex = 0;
       }
     },
     prev() {
       this.currentIndex--;
       if (this.currentIndex < 0) {
-        this.currentIndex = this.slides.length - 1;
+        this.currentIndex = this.tim.length - 1;
       }
     },
     startAutoSlide() {
@@ -74,10 +62,6 @@ export default {
     },
     stopAutoSlide() {
       clearInterval(this.autoSlideInterval);
-    },
-    sendPopupData(title, description){
-      this.popupTitle = title
-      this.popupDescription = description
     }
   },
 };

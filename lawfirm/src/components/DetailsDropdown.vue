@@ -1,6 +1,6 @@
 <template>
     <div class="relative w-full">
-        <div @click="toggleDropdown" class="py-2 justify-between flex">
+        <div @click="toggleDropdown" class="py-2 justify-between flex font-bold">
             {{ title }}
             <span v-if="!isOpen">+</span>
             <span v-if="isOpen">-</span>
@@ -20,10 +20,13 @@ export default {
             type: String,
             required: true,
         },
+        status: {
+            type: String
+        }
     },
     data() {
         return {
-            isOpen: false,
+            isOpen: status ? true : false,
         };
     },
     methods: {

@@ -26,12 +26,17 @@ export default {
         slideInFromBottom: {
           '0%': { transform: 'translateY(100%)', opacity: '0%' },
           '100%': { transform: 'translateY(0)', opacity: '100%' },
+        },
+        slideInFromTop: {
+          '0%': { transform: 'translateY(-100%)', opacity: '0%' },
+          '100%': { transform: 'translateY(0)', opacity: '100%' },
         }
       },
       animation: {
         slideInFromRight: 'slideInFromRight 2s ease-out forwards',
         slideInFromLeft: 'slideInFromLeft 2s ease-out forwards',
         slideInFromBottom: 'slideInFromBottom 2s ease-out forwards',
+        slideInFromTop: 'slideInFromTop 2s ease-out forwards',
       },
     },
   },
