@@ -52,7 +52,7 @@ import Popup from './PopupBio.vue'
     </div>
 
 
-    <div class="layanan my-10 px-24">
+    <div class="layanan my-10 px-11">
         <p class="text-3xl font-bold mt-20">SEMUA LAYANAN</p>
         <Dropdown title="Litgasi dan penyelesaian sengketa" class="cursor-pointer text-2xl">
             <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
