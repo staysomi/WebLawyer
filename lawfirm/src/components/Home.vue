@@ -11,7 +11,7 @@ import Popup from './PopupBio.vue'
         <div class="md:grid md:grid-cols-2 md:gap-16 md:px-16 items-center z-1">
             <div v-show="isVisible" class="md:animate-slideInFromLeft px-4">
                 <div>
-                    <p class="text-2xl md:text-6xl mb-4 md:mt-20 font-bold animate-slideInFromTop">Wujudkan Keadilan
+                    <p class="text-2xl md:text-4xl xl:text-6xl mb-4 md:mt-10 font-bold animate-slideInFromTop">Wujudkan Keadilan
                         Hukum Bersih Bersama Kami
                     </p>
                     <p>Tantowi Law – Menegakkan Hukum Yang Adil Bagi Seluruh Rakyat Indonesia
@@ -69,26 +69,28 @@ import Popup from './PopupBio.vue'
             <div class="animate-slideInFromBottom my-8 w-1/2">
                 <div class="grid grid-cols-2 gap-8">
                     <img src="../assets/img/office.jpg" class="">
-                    <div class="item-center mt-96">
-                        <p class="text-md">> Tantowi Law</p>
-                        <p class="text-xl my-4 w-fit">Merupakan Kantor Hukum Terkemuka Di Tulungagung Yang Menegakkan
-                            Hukum
-                            Seadil-Adilnya
-                            Serta Dapat Memberikan Keadilan Bagi Seluruh Rakyat Indonesia</p>
-                        <div class="flex gap-4">
-                            <router-link to="/layanan-kami">
-                                <div
+                    <div class="item-center relative">
+                        <div class="absolute bottom-0">
+                            <p class="text-md">> Tantowi Law</p>
+                            <p class="text-xl my-4 w-fit">Merupakan Kantor Hukum Terkemuka Di Tulungagung Yang Menegakkan
+                                Hukum
+                                Seadil-Adilnya
+                                Serta Dapat Memberikan Keadilan Bagi Seluruh Rakyat Indonesia</p>
+                            <div class="flex gap-4">
+                                <router-link to="/layanan-kami">
+                                    <div
+                                        class="hubungi-kami flex items-center w-fit rounded-full hover:text-gray-800 min-h-4 
+                                                    !bg-white hover:!bg-blue-300 px-4 py-1 text-blue-800 border border-white">
+                                        <p class="text-xs whitespace-nowrap uppercase">
+                                            Layanan Kami</p>
+                                    </div>
+                                </router-link>
+                                <div @click="showPopup = true"
                                     class="hubungi-kami flex items-center w-fit rounded-full hover:text-gray-800 min-h-4 
-                                                !bg-white hover:!bg-blue-300 px-4 py-1 text-blue-800 border border-white">
+                                                    !bg-transparent hover:!bg-blue-300 px-4 py-1 text-white border border-white">
                                     <p class="text-xs whitespace-nowrap uppercase">
-                                        Layanan Kami</p>
+                                        Lihat Legalitas</p>
                                 </div>
-                            </router-link>
-                            <div @click="showPopup = true"
-                                class="hubungi-kami flex items-center w-fit rounded-full hover:text-gray-800 min-h-4 
-                                                !bg-transparent hover:!bg-blue-300 px-4 py-1 text-white border border-white">
-                                <p class="text-xs whitespace-nowrap uppercase">
-                                    Lihat Legalitas</p>
                             </div>
                         </div>
                     </div>
