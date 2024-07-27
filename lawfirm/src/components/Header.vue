@@ -29,9 +29,9 @@ const contentChange = (num) => {
 }
 </script>
 <template>
-  <div class="flex justify-between sm:justify-around sticky top-0 w-full z-10 bg-white">
-    <img src="../assets/img/icon.png" class="w-12 h-auto py-2 ml-8">
-    <div class="hidden sm:flex justify-center items-center">
+  <div class="flex justify-between md:justify-around md:py-2 md:px-8 sticky top-0 w-full z-10 bg-white">
+    <img src="../assets/img/icon.png" class="w-12 md:w-16 h-auto py-2 ml-8">
+    <div class="hidden md:flex justify-center items-center">
       <router-link to="/" class="navigation-item" @click="contentChange(1)">
         <div :class="{ active: content === 1 }">Beranda</div>
       </router-link>
@@ -45,7 +45,7 @@ const contentChange = (num) => {
         <div :class="{ active: content === 4 }">Hubungi Kami</div>
       </router-link>
     </div>
-    <div class="hidden sm:flex items-center">
+    <div class="hidden md:flex items-center">
       <WA>
         <div class="hubungi-kami flex items-center rounded-full min-h-4 px-6 py-2">
           <div class="h-fit">0812-999-9999<br>

@@ -1,37 +1,46 @@
 <template>
-    <div class="p-8">
-        <p class="text-xs uppercase">Biodata Diri</p>
-        <p class="text-md">Pak Arif</p>
-        <img src="../../assets/img/tim21x1.png" class="bg-gradient-to-b from-gray-100 to-blue-500 my-2">
-        <p class="text-sm"> <span class="font-bold">Muchamad Ilham Tantowi. S.H., M.H</span> adalah pakar hukum
-            berpengalaman berkebangsaan Indonesia, memiliki latar belakang pendidikan yang solid
-            dengan gelar S1 dan S2 dalam Ilmu Hukum dari Universitas Islam Kadiri (UNISKA). Sebagai seorang advokat yang
-            terampil, beliau telah menangani berbagai kasus hukum yang kompleks di berbagai pengadilan di seluruh
-            Indonesia.</p><br>
-        <p>Dengan pengalaman yang luas, beliau telah berhasil menangani sejumlah perkara penting termasuk
-            sengketa tanah, gugatan pembagian waris, kasus-kasus pidana terkait narkoba, serta berbagai perkara perdata
-            dan pidana lainnya. Dedikasi beliau dalam memberikan perlindungan hukum dan advokasi yang kuat terhadap
-            klien-klien di berbagai tingkatan pengadilan menegaskan komitmen beliau untuk keadilan dan penegakan hukum
-            yang adil.</p>
-        <p class="mt-4 text-sm">Job Advokat</p>
-        <Dropdown title="Pendidikan" class="cursor-pointer">
-            <li class="text-sm ml-4">S1 Ilmu Hukum (Uniska)</li>
-            <li class="text-sm ml-4">S2 Ilmu Hukum (Uniska)</li>
-        </Dropdown>
-        <Dropdown title="Rekam Kerja" class="cursor-pointer">
-            <div v-for="(item, index) in cases" class="flex mb-2">
-                <p class="text-sm ml-4">{{ index + 1 }}.</p>
-                <p class="text-sm ml-4">{{ item }}</p>
+    <div class="p-8 md:flex md:gap-20 md:justify-center">
+        <div class="hidden md:flex md:flex-col">
+            <Pengacara />
+        </div>
+        <div class="md:w-3/5">
+            <p class="text-xs uppercase">Biodata Diri</p>
+            <p class="text-md">Pak Arif</p>
+            <div class="md:flex md:gap-8">
+                <img src="../../assets/img/tim21x1.png" class="md:w-2/5 md:h-auto bg-gradient-to-b from-gray-100 to-blue-500 my-2">
+                <div class="flex flex-col">
+                    <p class="text-sm"> <span class="font-bold">Muchamad Ilham Tantowi. S.H., M.H</span> adalah pakar hukum
+                        berpengalaman berkebangsaan Indonesia, memiliki latar belakang pendidikan yang solid
+                        dengan gelar S1 dan S2 dalam Ilmu Hukum dari Universitas Islam Kadiri (UNISKA). Sebagai seorang advokat yang
+                        terampil, beliau telah menangani berbagai kasus hukum yang kompleks di berbagai pengadilan di seluruh
+                        Indonesia.</p><br>
+                    <p>Dengan pengalaman yang luas, beliau telah berhasil menangani sejumlah perkara penting termasuk
+                        sengketa tanah, gugatan pembagian waris, kasus-kasus pidana terkait narkoba, serta berbagai perkara perdata
+                        dan pidana lainnya. Dedikasi beliau dalam memberikan perlindungan hukum dan advokasi yang kuat terhadap
+                        klien-klien di berbagai tingkatan pengadilan menegaskan komitmen beliau untuk keadilan dan penegakan hukum
+                        yang adil.</p>
+                </div>
             </div>
-        </Dropdown>
-        <p class="mt-4 text-sm">Pengacara Lainnya</p>
-        <router-link to="tim2">
-            <li class="text-xs">Pak Arif</li>
-        </router-link>
+            <p class="mt-4 text-sm">Job Advokat</p>
+            <Dropdown title="Pendidikan" class="cursor-pointer">
+                <li class="text-sm ml-4">S1 Ilmu Hukum (Uniska)</li>
+                <li class="text-sm ml-4">S2 Ilmu Hukum (Uniska)</li>
+            </Dropdown>
+            <Dropdown title="Rekam Kerja" class="cursor-pointer">
+                <div v-for="(item, index) in cases" class="flex mb-2">
+                    <p class="text-sm ml-4">{{ index + 1 }}.</p>
+                    <p class="text-sm ml-4">{{ item }}</p>
+                </div>
+            </Dropdown>
+        </div>
+        <div class="md:hidden">
+            <Pengacara />
+        </div>
     </div>
 </template>
 <script setup>
 import Dropdown from '../DetailsDropdown.vue'
+import Pengacara from '../PengacaraLainnya.vue'
 </script>
 <script>
 export default {
