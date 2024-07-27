@@ -31,6 +31,7 @@ const contentChange = (num) => {
 <template>
   <div class="flex justify-between md:justify-around md:py-2 md:px-8 sticky top-0 w-full z-10 bg-white">
     <img src="../assets/img/icon.png" class="w-12 md:w-16 h-auto py-2 ml-8">
+    <!-- Desktop Navbar -->
     <div class="hidden md:flex justify-center items-center">
       <router-link to="/" class="navigation-item" @click="contentChange(1)">
         <div :class="{ active: content === 1 }">Beranda</div>
@@ -54,38 +55,14 @@ const contentChange = (num) => {
         </div>
       </WA>
     </div>
+    <!-- End Desktop Navbar -->
+
     <button @click="toggleSidebar" class="md:hidden mr-8 text-gray-800 focus:outline-none">
       <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
       </svg>
     </button>
     <!-- Sidebar -->
-    <!-- <div
-      :class="['fixed inset-y-0 md:hidden flex flex-col justify-end right-0 transform bg-gray-800 text-white w-4/5 z-10 transition-transform duration-300 ease-in-out', { 'hidden': !isSidebarOpen, 'md:flex': true }]">
-      <div class="flex items-center justify-between p-4 bg-gray-900">
-        <img src="../assets/img/icon.png" class="w-24 h-auto mt-4">
-        <button @click="toggleSidebar" class="text-gray-400 hover:text-white focus:outline-none md:hidden">
-          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </button>
-      </div>
-      <div class="flex flex-col items-left">
-        <router-link to="/" class="navigation-item block py-2.5 px-4" @click="toggleSidebar(), contentChange(1)">
-          <div :class="{ active: content === 1 }">Beranda</div>
-        </router-link>
-        <router-link to="/layanan-kami" class="navigation-item block py-2.5 px-4" @click="toggleSidebar(), contentChange(2)">
-          <div :class="{ active: content === 2 }">Layanan Kami</div>
-        </router-link>
-        <router-link to="/tim-kami" class="navigation-item block py-2.5 px-4" @click="toggleSidebar(), contentChange(3)">
-          <div :class="{ active: content === 3 }">Tim Kami</div>
-        </router-link>
-        <router-link to="/hubungi-kami" class="navigation-item block py-2.5 px-4" @click="toggleSidebar(), contentChange(4)">
-          <div :class="{ active: content === 4 }">Hubungi Kami</div>
-        </router-link>
-      </div>
-    </div> -->
-
     <div v-if="isSidebarOpen" class="w-4/5 h-full fixed text-white right-0 bg-gray-800 z-10">
       <div class="flex items-center justify-between p-4 bg-gray-900">
         <img src="../assets/img/icon.png" class="w-12 h-auto my-2">

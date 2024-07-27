@@ -9,7 +9,7 @@ import Popup from './PopupBio.vue'
 <template>
     <div class="home">
         <div class="md:grid md:grid-cols-2 md:gap-16 md:px-16 items-center z-1">
-            <div v-show="isVisible" class="md:animate-slideInFromLeft">
+            <div v-show="isVisible" class="md:animate-slideInFromLeft px-4">
                 <div>
                     <p class="text-2xl md:text-6xl mb-4 md:mt-20 font-bold animate-slideInFromTop">Wujudkan Keadilan
                         Hukum Bersih Bersama Kami
@@ -33,7 +33,7 @@ import Popup from './PopupBio.vue'
                     </div>
                 </div>
             </div>
-            <div v-show="isVisible" class="bg-blue-900 md:hidden p-4 text-white">
+            <div v-show="isVisible" class="bg-blue-900 md:hidden mt-8 p-4 text-white">
                 <div class="animate-slideInFromBottom mt-8">
                     <p class="text-md">> Tantowi Law</p>
                     <p class="text-xl my-4 w-fit">Merupakan Kantor Hukum Terkemuka Di Tulungagung Yang Menegakkan Hukum
@@ -95,12 +95,12 @@ import Popup from './PopupBio.vue'
                 </div>
             </div>
         </div>
-        <div class="bg-blue-900 py-8 px-48 text-white">
+        <div class="bg-blue-900 py-8 px-4 md:px-48 text-white">
             <p class="mb-4">Tim Tantowi Law</p>
-            <p class="text-4xl mb-4">Advokat berpengalaman, ahli, dengan pelatihan berkelanjutan.</p>
+            <p class="md:text-4xl mb-4">Advokat berpengalaman, ahli, dengan pelatihan berkelanjutan.</p>
             <router-link to="/tim-kami">
                 <div
-                    class="cursor-pointer mb-4 py-1 px-4 w-fit h-fit text-lg bg-transparent border border-gray-400 rounded-full text-white">
+                    class="cursor-pointer mb-4 py-1 px-4 w-fit h-fit text-lg hover:text-blue-900 hover:bg-gray-400 bg-transparent border border-gray-400 rounded-full text-white">
                     Tim Kami</div>
             </router-link>
             <Slider class="md:hidden"/>
@@ -113,7 +113,7 @@ import Popup from './PopupBio.vue'
                          <p class="text-2xl">{{ item.name }}</p>
                          <router-link :to="item.tim">
                              <div
-                                 class="cursor-pointer mt-4 py-2 px-4 w-fit h-fit text-lg bg-transparent border border-gray-400 rounded-full text-white">
+                                 class="cursor-pointer mt-4 py-2 px-4 w-fit h-fit text-lg bg-transparent hover:text-blue-900 hover:bg-gray-400 border border-gray-400 rounded-full text-white">
                                  Lihat Bio</div>
                          </router-link>
                      </div>
