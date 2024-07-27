@@ -27,7 +27,7 @@
             keterampilan melalui pelatihan berkelanjutan. </p>
         <div class="flex justify-around mt-8">
             <div class="flex w-full flex-col justify-center items-center">
-                <img src="../assets/img/tim1.png" alt="Slide Image" class="w-4/5 h-auto" />
+                <img src="../assets/img/tim11x1.png" alt="Slide Image" class="w-4/5 h-auto" />
                 <p class="text-sm">Advokat</p>
                 <p class="text-lg">Muchamad Ilham Tantowi. S.H., M.H</p>
                 <router-link to="tim1">
@@ -39,7 +39,7 @@
         </div>
         <div class="flex justify-around my-8">
             <div class="flex w-full flex-col justify-center items-center">
-                <img src="../assets/img/tim2.png" alt="Slide Image" class="w-4/5 h-auto" />
+                <img src="../assets/img/tim21x1.png" alt="Slide Image" class="w-4/5 h-auto" />
                 <p class="text-sm">Advokat</p>
                 <p class="text-lg">Pak Arif</p>
                 <router-link to="tim2">

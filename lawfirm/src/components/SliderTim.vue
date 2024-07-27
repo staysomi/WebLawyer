@@ -4,7 +4,7 @@
       :style="{ transform: `translateX(-${currentIndex * (100 / visibleItems)}%)` }">
       <div v-for="(item, index) in visibleSlides" :key="index" class="w-full flex-shrink-0 justify-center">
         <div class="flex w-full flex-col justify-center items-center">
-          <img :src="`src/assets/img/${item.tim}.png`" alt="Slide Image"
+          <img :src="`src/assets/img/${item.tim}1x1.png`" alt="Slide Image"
             class="bg-gradient-to-b from-gray-100 to-transparent w-4/5" />
           <p class="text-sm">Advokat</p>
           <p class="text-md">{{ item.name }}</p>

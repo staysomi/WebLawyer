@@ -8,7 +8,6 @@ const isSidebarOpen = ref(false);
 
 const toggleSidebar = () => {
   isSidebarOpen.value = !isSidebarOpen.value;
-  console.log(isSidebarOpen.value)
 };
 
 const route = useRoute();
@@ -21,7 +20,6 @@ const setCurrentPath = () => {
   } else if (currentPath.value === '/hubungi-kami') {
     content.value = 4
   }
-  console.log('logs', content.value)
 }
 onMounted(setCurrentPath)
 
@@ -32,7 +30,7 @@ const contentChange = (num) => {
 </script>
 <template>
   <div class="flex justify-between sm:justify-around sticky top-0 w-full z-10 bg-white">
-    <img src="../assets/img/icon.png" class="w-16 h-auto pt-4 ml-8">
+    <img src="../assets/img/icon.png" class="w-12 h-auto py-2 ml-8">
     <div class="hidden sm:flex justify-center items-center">
       <router-link to="/" class="navigation-item" @click="contentChange(1)">
         <div :class="{ active: content === 1 }">Beranda</div>
@@ -90,7 +88,7 @@ const contentChange = (num) => {
 
     <div v-if="isSidebarOpen" class="w-4/5 h-full fixed text-white right-0 bg-gray-800 z-10">
       <div class="flex items-center justify-between p-4 bg-gray-900">
-        <img src="../assets/img/icon.png" class="w-24 h-auto mt-4">
+        <img src="../assets/img/icon.png" class="w-12 h-auto my-2">
         <button @click="toggleSidebar" class="text-gray-400 hover:text-white focus:outline-none md:hidden">
           <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"></path>

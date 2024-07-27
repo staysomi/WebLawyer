@@ -2,7 +2,7 @@
     <div class="p-8">
         <p class="text-xs uppercase">Biodata Diri</p>
         <p class="text-md">Pak Arif</p>
-        <img src="../../assets/img/tim2.png" class="bg-gradient-to-b from-gray-100 to-blue-500 my-2">
+        <img src="../../assets/img/tim21x1.png" class="bg-gradient-to-b from-gray-100 to-blue-500 my-2">
         <p class="text-sm"> <span class="font-bold">Muchamad Ilham Tantowi. S.H., M.H</span> adalah pakar hukum
             berpengalaman berkebangsaan Indonesia, memiliki latar belakang pendidikan yang solid
             dengan gelar S1 dan S2 dalam Ilmu Hukum dari Universitas Islam Kadiri (UNISKA). Sebagai seorang advokat yang
