@@ -1,54 +1,61 @@
 <template>
     <div class="section-1">
-        <h2 class="text-xs font-semibold mt-10 ml-5">Tim Kami</h2>
-        <p class="text-2xl font-semibold ml-5">INOVASI DAN KOLABORASI <br>DALAM PERSPEKTIF HUKUM</p>
-        <img src="https://placehold.co/600x400" alt="" class="w-full h-20 mt-2">
+        <h2 class="md:text-2xl font-semibold md:mt-10 md:ml-28">Tim Kami</h2>
+        <p class="md:text-4xl font-semibold mt-4 md:ml-28">INOVASI DAN KOLABORASI <br>DALAM PERSPEKTIF HUKUM</p>
+        <img src="https://placehold.co/600x400" alt="" class="w-full md:h-60 md:mt-20">
 
-        <div class="text-sm mt-8 p-4">
-            <!-- visi 1 -->
-            <li class="font-bold">VISI</li>
-            <p class="text-sm">Menegakkan Hukum seadil-adilnya serta dapat memberikan <br>keadilan bagi Seluruh
-                Rakyat Indonesia</p>
+        <div class="md:text-xl md:mt-20 p-4 md:ml-28 md:mr-10 md:flex md:justify-start md:items-start">
+            <div class="md:text-xl md:mr-10">
+        <h2 class="font-bold mt-4">VISI</h2>
+        <p>Menegakkan Hukum seadil-adilnya serta dapat memberikan <br>keadilan bagi Seluruh Rakyat Indonesia</p>
+    </div>
 
-            <!-- misi 2 -->
-            <li class="font-bold">MISI</li>
-            <li class="ml-4">Memberikan bantuan ataupun penyelesaian berazaskan keadilan</li>
-            <li class="ml-4">Bersikap profesional dalam menangani setiap perkara</li>
-            <li class="ml-4">Transparansi, bersih, tegak lurus</li>
-        </div>
+    <!-- Konten 2 -->
+    <div class="md:text-xl ">
+        <h2 class="font-bold mt-4">MISI</h2>
+        <ul class="list-disc list-inside">
+            <li>Memberikan bantuan ataupun penyelesaian berazaskan keadilan</li>
+            <li>Bersikap profesional dalam menangani setiap perkara</li>
+            <li>Transparansi, bersih, tegak lurus</li>
+        </ul>
+    </div>
+</div>
     </div>
 
 
     <div class="section-profile">
-        <p class="text-xl font-semibold mt-10 ml-5">
+        <p class="md:text-2xl font-semibold md:mt-10 md:ml-28">
             SEMUA PROFILE
         </p>
-        <p class="ml-5 mt-4 text-sm">Tim kami terdiri dari advokat berpengalaman dan ahli yang terus mengembangkan
+        <p class="md:ml-28 mt-4 md:text-xl">Tim kami terdiri dari advokat berpengalaman dan ahli yang terus mengembangkan <br>
             keterampilan melalui pelatihan berkelanjutan. </p>
-        <div class="flex justify-around mt-8">
-            <div class="flex w-full flex-col justify-center items-center">
-                <img src="../assets/img/tim11x1.png" alt="Slide Image" class="w-4/5 h-auto" />
-                <p class="text-sm">Advokat</p>
-                <p class="text-lg">Muchamad Ilham Tantowi. S.H., M.H</p>
-                <router-link to="tim1">
-                    <div
-                        class="cursor-pointer mt-4 py-2 px-4 w-fit h-fit text-sm bg-transparent border border-gray-400 rounded-full text-gray-400">
-                        Lihat Bio</div>
-                </router-link>
+            <div class="flex justify-around md:mt-10">
+    <!-- Konten pertama -->
+    <div class="flex w-full flex-col justify-center items-center">
+        <img src="../assets/img/tim11x1.png" alt="Slide Image" class="md:w-auto md:h-96 mt-6" />
+        <p class="md:text-lg">Advokat</p>
+        <p class="md:text-xl">Muchamad Ilham Tantowi. S.H., M.H</p>
+        <router-link to="tim1">
+            <div
+                class="cursor-pointer mt-4 py-2 px-4 w-fit h-fit text-sm bg-transparent border border-gray-400 rounded-full text-gray-400">
+                Lihat Bio
             </div>
-        </div>
-        <div class="flex justify-around my-8">
-            <div class="flex w-full flex-col justify-center items-center">
-                <img src="../assets/img/tim21x1.png" alt="Slide Image" class="w-4/5 h-auto" />
-                <p class="text-sm">Advokat</p>
-                <p class="text-lg">Pak Arif</p>
-                <router-link to="tim2">
-                    <div
-                        class="cursor-pointer mt-4 py-2 px-4 w-fit h-fit text-sm bg-transparent border border-gray-400 rounded-full text-gray-400">
-                        Lihat Bio</div>
-                </router-link>
+        </router-link>
+    </div>
+
+    <!-- Konten kedua -->
+    <div class="flex w-full flex-col justify-center items-center">
+        <img src="../assets/img/tim21x1.png" alt="Slide Image" class="md:w-auto md:h-96 md:mt-20" />
+        <p class="md:text-lg">Advokat</p>
+        <p class="md:text-xl">Pak Arif</p>
+        <router-link to="tim2">
+            <div
+                class="cursor-pointer mt-4 py-2 px-4 w-fit h-fit text-sm bg-transparent border border-gray-400 rounded-full text-gray-400 md:mb-20">
+                Lihat Bio
             </div>
-        </div>
+        </router-link>
+    </div>
+</div>
     </div>
 </template>
 

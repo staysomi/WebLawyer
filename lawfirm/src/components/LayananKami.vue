@@ -6,9 +6,9 @@ import Popup from './PopupBio.vue'
 </script>
 <template>
     <div class="about p-4">
-        <h2 class="text-md font-semibold mt-10">Layanan Kami</h2>
-        <p class="text-2xl font-semibold mt-4">Lorem ipsum dolor sit amet,
-        <p class="text-2xl font-semibold">consectetur adipiscing elit.</p>
+        <h2 class="md:text-2xl font-semibold md:mt-10 md:ml-28">Layanan Kami</h2>
+        <p class="md:text-4xl font-semibold mt-4 md:ml-28">Lorem ipsum dolor sit amet,
+        <p class="md:text-4xl font-semibold md:ml-28">consectetur adipiscing elit.</p>
         </p>
     </div>
 
@@ -20,7 +20,7 @@ import Popup from './PopupBio.vue'
 
         <div class="text-sm mt-20 flex justify-center">
             <!-- Konten 1 -->
-            <div class="text-sm p-4 ">
+            <div class="md:text-xl p-4 ">
                 Lorem ipsum dolor sit amet, adipiscing elit.
                 <p>Nullam fringilla nec nisl id vehicula. Curabitur leo ante,</p>
                 <p>ornare ac urna sodales, volutpat egestas ante.</p>
@@ -30,59 +30,59 @@ import Popup from './PopupBio.vue'
             </div>
 
             <!-- Konten 2 -->
-            <div class="text-sm p-4 hidden md:flex">
+            <div class="md:text-xl p-4 hidden md:block">
                 Lorem ipsum dolor sit amet, adipiscing elit.
                 <p>Nullam fringilla nec nisl id vehicula. Curabitur leo ante,</p>
                 <p>ornare ac urna sodales, volutpat egestas ante.</p>
-                <p>Praesent volutpat turpis nibh, vitae posuere erat elementum nec.</p>
+                <p>Praesent volutpat turpis nibh, vitae posuere erat elementum.</p>
             </div>
         </div>
         <div @click="showPopup = true"
-            class="cursor-pointer bg-blue-900 w-40 py-1 rounded-full hover:bg-blue-300 border-2 border-white text-center text-white text-sm ml-4 mt-4">
+            class="cursor-pointer bg-blue-900 w-40 py-1 rounded-full hover:bg-blue-300 border-2 border-white text-center text-white md:text-l md:ml-44 mt-4">
             LIHAT LEGALITAS</div>
     </div>
 
 
-    <div class="layanan my-4 px-4">
-        <p class="text-xl font-bold mt-20">SEMUA LAYANAN</p>
-        <Dropdown title="Litgasi dan penyelesaian sengketa" class="cursor-pointer text-sm">
-            <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
+    <div class="layanan my-4 px-4 md:ml-40 md:mr-40 md:mb-20">
+        <p class="md:text-3xl font-bold mt-20">SEMUA LAYANAN</p>
+        <Dropdown title="Litgasi dan penyelesaian sengketa" class="cursor-pointer md:text-xl md:mt-4">
+            <li class="md:text-medium ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Non-Litgasi" class="cursor-pointer text-sm">
-            <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <Dropdown title="Non-Litgasi" class="cursor-pointer md:text-xl md:mt-4">
+            <li class="md:text-medium ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Korporasi dan Komersial" class="cursor-pointer text-sm">
-            <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <Dropdown title="Korporasi dan Komersial" class="cursor-pointer md:text-xl md:mt-4">
+            <li class="md:text-medium ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Hukum Perdata" class="cursor-pointer text-sm">
-            <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <Dropdown title="Hukum Perdata" class="cursor-pointer md:text-xl md:mt-4">
+            <li class="md:text-medium ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Hukum Perburuhan" class="cursor-pointer text-sm">
-            <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <Dropdown title="Hukum Perburuhan" class="cursor-pointer md:text-xl md:mt-4">
+            <li class="md:text-medium ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Hukum Properti" class="cursor-pointer text-sm">
-            <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <Dropdown title="Hukum Properti" class="cursor-pointer md:text-xl md:mt-4">
+            <li class="md:text-medium ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Hukum Keluarga" class="cursor-pointer text-sm">
-            <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <Dropdown title="Hukum Keluarga" class="cursor-pointer md:text-xl md:mt-4">
+            <li class="md:text-medium ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Hukum Pidana" class="cursor-pointer text-sm">
-            <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <Dropdown title="Hukum Pidana" class="cursor-pointer md:text-xl md:mt-4">
+            <li class="md:text-medium ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Asisten Pajak" class="cursor-pointer text-sm">
-            <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <Dropdown title="Asisten Pajak" class="cursor-pointer md:text-xl md:mt-4">
+            <li class="md:text-medium ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
-        <Dropdown title="Perizinan Usaha" class="cursor-pointer text-sm">
-            <li class="text-sm ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <Dropdown title="Perizinan Usaha" class="cursor-pointer md:text-xl md:mt-4">
+            <li class="md:text-medium ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
     </div>
