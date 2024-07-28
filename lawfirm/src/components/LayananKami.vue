@@ -44,20 +44,27 @@ import Popup from './PopupBio.vue'
     </div>
 
     <div class="layanan my-4 px-4 md:ml-28 md:mr-40 mb-10">
-        <p class="md:text-3xl font-bold mt-10 md:mt-20">SEMUA LAYANAN</p>
-        <Dropdown title="Litgasi dan penyelesaian sengketa" class="cursor-pointer md:text-xl md:mt-4">
-            <li class="md:text-medium ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        </Dropdown>
-        <hr>
-        <Dropdown title="Non-Litgasi" class="cursor-pointer md:text-xl md:mt-4">
-            <li class="md:text-medium ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        </Dropdown>
-        <hr>
-        <Dropdown title="Korporasi dan Komersial" class="cursor-pointer md:text-xl md:mt-4">
-            <li class="md:text-medium ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        </Dropdown>
-        <hr>
+        <p class="md:text-3xl font-bold mt-10 md:mt-20">LAYANAN KAMI</p>
         <Dropdown title="Hukum Perdata" class="cursor-pointer md:text-xl md:mt-4">
+            <li class="md:text-medium ml-8 mt-2"> Hukum Corporate</li>
+            <li class="md:text-medium ml-8 mt-4"> Hukum Properti</li>
+            <li class="md:text-medium ml-8 mt-4"> Hukum Perindustrian</li>
+            <li class="md:text-medium ml-8 mt-4"> Korporasi dan Komersial</li>
+            <li class="md:text-medium ml-8 mt-4"> Hukum Keluarga</li>
+        </Dropdown>
+        <hr>
+        <Dropdown title="Hukum Pidana" class="cursor-pointer md:text-xl md:mt-4">
+            <li class="md:text-medium ml-8 mt-2">Hukum Pidana Umum</li>
+            <li class="md:text-medium ml-8 mt-4">Hukum Pidana Khusus</li>
+            <li class="md:text-medium ml-8 mt-4">Perlindungan Perempuan dan Anak</li>
+            <li class="md:text-medium ml-8 mt-4">Tindak Pidana Korupsi</li>
+        </Dropdown>
+        <hr>
+        <Dropdown title="Non Litgasi" class="cursor-pointer md:text-xl md:mt-4">
+            <li class="md:text-medium ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        </Dropdown>
+        <hr>
+        <!-- <Dropdown title="Hukum Perdata" class="cursor-pointer md:text-xl md:mt-4">
             <li class="md:text-medium ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
         <hr>
@@ -84,7 +91,7 @@ import Popup from './PopupBio.vue'
         <Dropdown title="Perizinan Usaha" class="cursor-pointer md:text-xl md:mt-4">
             <li class="md:text-medium ml-8"> ipsum dolor sit amet, consectetur adipiscing elit.</li>
         </Dropdown>
-        <hr>
+        <hr> -->
     </div>
     <Popup :isVisible="showPopup" @close="showPopup = false">
         <h2 class="text-sm font-bold mb-4 text-white">LEGALITAS</h2>

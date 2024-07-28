@@ -16,7 +16,7 @@
       <div class="md:justify-center md:flex-col md:flex md:w-full">
         <div class="md:w-full md:flex md:items-center md:flex-col">
           <WA class="md:flex md:w-3/5">
-            <p class="text-xl md:text-5xl">Mari Konsultasi</p>
+            <p class="text-xl md:text-5xl">Mari Berkonsultasi</p>
             <br>
           </WA>
           <div class="md:w-3/5">

@@ -21,7 +21,11 @@
     </div>
 </div>
     </div>
-
+ 
+    <!-- <div class="text-center md:text-xl ">
+        <h2 class="font-bold mt-6">MOTTO</h2>
+        <p>Wujudkan Keadilan Hukum Bersih Bersama Kami</p>
+    </div> -->
 
     <div class="section-profile ">
         <p class="md:text-2xl font-semibold mt-8 ml-4 md:ml-28">
@@ -47,7 +51,7 @@
 <div class="flex w-full flex-col justify-center items-center pb-10">
     <img src="../assets/img/tim21x1.png" alt="Slide Image" class="md:w-auto md:h-96" />
     <p class="md:text-lg">Advokat</p>
-    <p class="md:text-xl">Pak Arif</p>
+    <p class="md:text-xl">Arif Fathkurrohman, S.H.</p>
     <router-link to="tim2">
         <div
             class="cursor-pointer mt-4 py-2 px-4 w-fit h-fit text-sm bg-transparent border border-gray-400 rounded-full text-gray-400">

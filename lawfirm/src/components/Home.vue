@@ -129,20 +129,24 @@ import Popup from './PopupBio.vue'
                 <p class="text-xl w-fit mt-4 mb-2">Dilakukan oleh tenaga ahli berintegritas, berfokus pada klien demi
                     hasil
                     maksimal</p>
-                <Dropdown title="1. Jujur" class="cursor-pointer">
-                    <p>This is the description text that appears when the dropdown is opened.</p>
+                <Dropdown title="1. Jujur" class="cursor-pointer md:mt-4">
+                    <li class="md:text-medium ml-8 mt-2">Jujur menangani perkara</li>
+                    <li class="md:text-medium ml-8 mt-4">Jujur dalam menyampaikan analisa perkara kepada klien</li>
+                    <li class="md:text-medium ml-8 mt-4">Jujur dalam penegakan hukum</li>
                 </Dropdown>
-                <Dropdown title="2. Totalitas" class="cursor-pointer">
-                    <p>This is the description text that appears when the dropdown is opened.</p>
+                <Dropdown title="2. Totalitas" class="cursor-pointer md:mt-4">
+                    <li class="md:text-medium ml-8 mt-2">Totalitas dalam menangani perkara</li>
+                    <li class="md:text-medium ml-8 mt-4">Totalitas dalam penyelesaian perkara</li>
+                    <li class="md:text-medium ml-8 mt-4">Totalitas dalam penegakan hukum</li>
                 </Dropdown>
-                <Dropdown title="3. Kredibilitas" class="cursor-pointer">
-                    <p>This is the description text that appears when the dropdown is opened.</p>
+                <Dropdown title="3. Kredibilitas" class="cursor-pointer md:mt-4">
+                    <li class="md:text-medium ml-8 mt-2">Berkualitas, berkapasitas dalam penegakan hukum</li>
                 </Dropdown>
-                <Dropdown title="4. Integritas" class="cursor-pointer">
-                    <p>This is the description text that appears when the dropdown is opened.</p>
+                <Dropdown title="4. Integritas" class="cursor-pointer md:mt-4">
+                    <li class="md:text-medium ml-8 mt-2">Berwawasan dengan keilmuan hukum yang luas</li>
                 </Dropdown>
-                <Dropdown title="5. Tegak Lurus" class="cursor-pointer">
-                    <p>This is the description text that appears when the dropdown is opened.</p>
+                <Dropdown title="5. Tegak Lurus" class="cursor-pointer md:mt-4">
+                    <li class="md:text-medium ml-8 mt-2">Berkomitmen secara tegak lurus dalam menangani dan menyelesaikan setiap perkara berdasarkan azas-azas Ketuhanan</li>
                 </Dropdown>
             </div>
         </div>

@@ -5,7 +5,7 @@
         </div>
         <div class="md:w-3/5">
             <p class="text-xs uppercase">Biodata Diri</p>
-            <p class="text-md">Pak Arif</p>
+            <p class="text-md">ARIF FATKHURROHMAN, S.H.</p>
             <div class="md:flex md:gap-8">
                 <img src="../../assets/img/tim21x1.png" class="md:w-2/5 md:h-auto bg-gradient-to-b from-gray-100 to-blue-500 my-2">
                 <div class="flex flex-col">
