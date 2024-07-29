@@ -6,9 +6,8 @@
       <div class="absolute inset-0 bg-black opacity-60"></div>
       <Transition name="fade">
         <div class="relative z-8 p-4 text-white animate-slideInFromBottom">
-          <p class="md:text-xl">Langkah Pertama</p>
-          <p class="text-xl md:text-3xl">Segera mulai langkah awal menemukan solusi hukum Anda bersama tim ahli kami.
-          </p>
+          <p class="text-xl md:text-3xl">Kantor Advokat Terpercaya di Tulungagung yang dapat menyelesaikan setiap
+            permasalahan hukum.</p>
         </div>
       </Transition>
     </div>
@@ -24,8 +23,8 @@
           </div>
         </div>
         <div class="md:w-full md:flex mt-4 md:mt-8 md:justify-center">
-          <div class="w-3/5 flex flex-col md:grid md:grid-cols-3 md:justify-center">
-            <div>
+          <div class="w-3/5 flex flex-col md:flex-row md:justify-between">
+            <div class="w-1/2">
               <p class="text-xs md:text-md">
               <p class="font-bold">Yudhistira Law Firm<br><br>
                 Kantor Pusat :</p>
@@ -34,11 +33,11 @@
                 Kabupaten Tulungagung, Jawa Timur
                 66232</p>
               </p><br>
+              <WA class="mb-4">
+                <p class="text-xs md:text-md">Telepon : +628563542066</p>
+              </WA>
             </div>
-            <WA class="mb-4">
-              <p class="text-xs md:text-md">Telepon : +628563542066</p>
-            </WA>
-            <div class="">
+            <div class="md:flex md:flex-col">
               <router-link to="/">
                 <div class="text-xs md:text-md my-2">Beranda</div>
               </router-link>

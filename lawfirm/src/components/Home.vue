@@ -11,7 +11,8 @@ import Popup from './PopupBio.vue'
         <div class="md:grid md:grid-cols-2 md:gap-16 md:px-16 items-center z-1">
             <div v-show="isVisible" class="md:animate-slideInFromLeft px-4">
                 <div>
-                    <p class="text-2xl md:text-4xl xl:text-6xl mb-4 md:mt-10 font-bold animate-slideInFromTop">Wujudkan Keadilan
+                    <p class="text-2xl md:text-4xl xl:text-6xl mb-4 md:mt-10 font-bold animate-slideInFromTop">Wujudkan
+                        Keadilan
                         Hukum Bersih Bersama Kami
                     </p>
                     <p>Tantowi Law – Menegakkan Hukum Yang Adil Bagi Seluruh Rakyat Indonesia
@@ -47,11 +48,6 @@ import Popup from './PopupBio.vue'
                                     Layanan Kami</p>
                             </div>
                         </router-link>
-                        <div @click="showPopup = true" class="hubungi-kami flex items-center w-fit rounded-full hover:text-gray-800 min-h-4 
-                                        !bg-transparent hover:!bg-blue-300 px-4 py-1 text-white border border-white">
-                            <p class="text-xs whitespace-nowrap uppercase">
-                                Lihat Legalitas</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -67,15 +63,14 @@ import Popup from './PopupBio.vue'
         </div>
         <div v-show="isVisible" class="bg-blue-900 hidden md:flex justify-center py-4 text-white">
             <div class="animate-slideInFromBottom my-8 w-1/2">
-                <div class="grid grid-cols-2 gap-8">
+                Kantor Advokat Terpercaya di Tulungagung yang dapat menyelesaikan setiap permasalahan hukum.
+                <div class="grid grid-cols-2 gap-8 mt-4">
                     <img src="../assets/img/office.jpg" class="">
                     <div class="item-center relative">
                         <div class="absolute bottom-0">
-                            <p class="text-md">> Tantowi Law</p>
-                            <p class="text-xl my-4 w-fit">Merupakan Kantor Hukum Terkemuka Di Tulungagung Yang Menegakkan
-                                Hukum
-                                Seadil-Adilnya
-                                Serta Dapat Memberikan Keadilan Bagi Seluruh Rakyat Indonesia</p>
+                            <p class="text-xl">Jadikanlah kami rekan terpecaya dalam setiap permasalahan Hukum anda.</p>
+                            <p class="text-md my-4 w-fit">Kami siap membantu setiap permasalahan hukum berdasarkan
+                                Konstruksi Hukum yang tepat berdasarkn Analisa Hukum yang Efektif.</p>
                             <div class="flex gap-4">
                                 <router-link to="/layanan-kami">
                                     <div
@@ -85,12 +80,6 @@ import Popup from './PopupBio.vue'
                                             Layanan Kami</p>
                                     </div>
                                 </router-link>
-                                <div @click="showPopup = true"
-                                    class="hubungi-kami flex items-center w-fit rounded-full hover:text-gray-800 min-h-4 
-                                                    !bg-transparent hover:!bg-blue-300 px-4 py-1 text-white border border-white">
-                                    <p class="text-xs whitespace-nowrap uppercase">
-                                        Lihat Legalitas</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -98,37 +87,35 @@ import Popup from './PopupBio.vue'
             </div>
         </div>
         <div class="bg-blue-900 py-8 px-4 md:px-48 text-white">
-            <p class="mb-4">Tim Tantowi Law</p>
-            <p class="md:text-4xl mb-4">Advokat berpengalaman, ahli, dengan pelatihan berkelanjutan.</p>
+            <p class="mb-4">Tim Kami</p>
+            <p class="md:text-4xl mb-4">Advokat Profesional, Jujur, Tegak Lurus dan Berintegritas Tinggi.</p>
             <router-link to="/tim-kami">
                 <div
                     class="cursor-pointer mb-4 py-1 px-4 w-fit h-fit text-lg hover:text-blue-900 hover:bg-gray-400 bg-transparent border border-gray-400 rounded-full text-white">
                     Tim Kami</div>
             </router-link>
-            <Slider class="md:hidden"/>
-             <div class="hidden md:grid md:grid-cols-2 md:gap-8">
-                 <div v-for="item in tim">
-                     <div class="flex w-full flex-col justify-center items-center">
-                         <img :src="`src/assets/img/${item.tim}1x1.png`" alt="Slide Image"
-                             class="bg-gradient-to-b from-gray-100 to-transparent w-4/5" />
-                         <p class="text-lg">Advokat</p>
-                         <p class="text-2xl">{{ item.name }}</p>
-                         <router-link :to="item.tim">
-                             <div
-                                 class="cursor-pointer mt-4 py-2 px-4 w-fit h-fit text-lg bg-transparent hover:text-blue-900 hover:bg-gray-400 border border-gray-400 rounded-full text-white">
-                                 Lihat Bio</div>
-                         </router-link>
-                     </div>
-                 </div>
-             </div>
+            <Slider class="md:hidden" />
+            <div class="hidden md:grid md:grid-cols-2 md:gap-8">
+                <div v-for="item in tim">
+                    <div class="flex w-full flex-col justify-center items-center">
+                        <img :src="`src/assets/img/${item.tim}1x1.png`" alt="Slide Image"
+                            class="bg-gradient-to-b from-gray-100 to-transparent w-4/5" />
+                        <p class="text-lg">Advokat</p>
+                        <p class="text-2xl">{{ item.name }}</p>
+                        <router-link :to="item.tim">
+                            <div
+                                class="cursor-pointer mt-4 py-2 px-4 w-fit h-fit text-lg bg-transparent hover:text-blue-900 hover:bg-gray-400 border border-gray-400 rounded-full text-white">
+                                Lihat Bio</div>
+                        </router-link>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="md:grid md:grid-cols-2 md:p-16 md:mt-16 p-6">
             <img src="../assets/img/kenapaharus.jpg" alt="">
             <div class="text-black md:py-8 md:px-16 mt-4">
                 <p class="text-md">Mengapa Harus Ke TantowiLaw</p>
-                <p class="text-xl w-fit mt-4 mb-2">Dilakukan oleh tenaga ahli berintegritas, berfokus pada klien demi
-                    hasil
-                    maksimal</p>
+                <p class="text-xl w-fit mt-4 mb-2">Advokat Profeiaonal, Jujur, Tegak Lurus dan Berintegritas Tinggi</p>
                 <Dropdown title="1. Jujur" class="cursor-pointer md:mt-4">
                     <li class="md:text-medium ml-8 mt-2">Jujur menangani perkara</li>
                     <li class="md:text-medium ml-8 mt-4">Jujur dalam menyampaikan analisa perkara kepada klien</li>
@@ -146,22 +133,12 @@ import Popup from './PopupBio.vue'
                     <li class="md:text-medium ml-8 mt-2">Berwawasan dengan keilmuan hukum yang luas</li>
                 </Dropdown>
                 <Dropdown title="5. Tegak Lurus" class="cursor-pointer md:mt-4">
-                    <li class="md:text-medium ml-8 mt-2">Berkomitmen secara tegak lurus dalam menangani dan menyelesaikan setiap perkara berdasarkan azas-azas Ketuhanan</li>
+                    <li class="md:text-medium ml-8 mt-2">Berkomitmen secara tegak lurus dalam menangani dan
+                        menyelesaikan setiap perkara berdasarkan azas-azas Ketuhanan</li>
                 </Dropdown>
             </div>
         </div>
     </div>
-    <Popup :isVisible="showPopup" @close="showPopup = false">
-        <h2 class="text-2xl font-bold mb-4 text-white w-fit whitespace-normal">LEGALITAS</h2>
-        <p class="text-sm mb-4 text-white w-fit whitespace-normal">Akta notaris<br>
-            Nomor: 18, tanggal : 28 Mei 2024 </p>
-        <p class="text-sm mb-4 font-bold text-white w-fit">'Pengesahan Menteri Hukum dan <br>
-            Hak Asasi Manusia Republik Indonesia </p>
-        <p class="text-sm mb-4 text-white w-fit">Nomor : AHU-0000656-AH.01.18 Tahun 2024, <br>
-            Tanggal 28 Mei 2024<br>
-            NPWP : 20.667.326.1-655.000 <br>
-            Nomor Induk Berusaha (NIB) : 2905240103183 </p>
-    </Popup>
 </template>
 
 <script>
@@ -170,9 +147,6 @@ export default {
     data() {
         return {
             isVisible: false,
-            showPopup: false,
-            popupTitle: '',
-            popupDescription: '',
             tim: [
                 { tim: 'tim1', name: 'Muchamad Ilham Tantowi. S.H., M.H' },
                 { tim: 'tim2', name: 'Pak Arif. S.H., M.H' }
@@ -183,13 +157,8 @@ export default {
         this.isVisible = true;
     },
     components: {
-        Popup,
     },
     methods: {
-        sendPopupData(title, description) {
-            this.popupTitle = title
-            this.popupDescription = description
-        }
     },
 }
 </script>
