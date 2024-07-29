@@ -24,14 +24,12 @@
         </div>
         <div class="md:w-full md:flex mt-4 md:mt-8 md:justify-center">
           <div class="w-3/5 flex flex-col md:flex-row md:justify-between">
-            <div class="w-1/2">
+            <div class="md:w-1/2">
               <p class="text-xs md:text-md">
               <p class="font-bold">Yudhistira Law Firm<br><br>
                 Kantor Pusat :</p>
               <p class="font-mono font-thin">Jl. Ki Mangun Sarkoro No.IV, RT.007/RW.003, Prayan, Sobontoro, Kec.
-                Boyolangu,
-                Kabupaten Tulungagung, Jawa Timur
-                66232</p>
+                Boyolangu, Kabupaten Tulungagung, Jawa Timur 66232</p>
               </p><br>
               <WA class="mb-4">
                 <p class="text-xs md:text-md">Telepon : +628563542066</p>

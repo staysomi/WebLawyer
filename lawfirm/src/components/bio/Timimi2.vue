@@ -5,11 +5,11 @@
         </div>
         <div class="md:w-3/5">
             <p class="text-xs uppercase">Biodata Diri</p>
-            <p class="text-md">ARIF FATKHURROHMAN, S.H.</p>
+            <p class="text-md">Arif Fathkurrohman, S.H.</p>
             <div class="md:flex md:gap-8">
                 <img src="../../assets/img/tim21x1.png" class="md:w-2/5 md:h-auto bg-gradient-to-b from-gray-100 to-blue-500 my-2">
                 <div class="flex flex-col">
-                    <p class="text-sm"> <span class="font-bold">ARIF FATKHURROHMAN, S.H.</span> adalah pakar hukum
+                    <p class="text-sm"> <span class="font-bold">Arif Fathkurrohman, S.H.</span> adalah pakar hukum
                         berpengalaman berkebangsaan Indonesia, memiliki latar belakang pendidikan yang solid
                         dengan gelar S1 dalam Ilmu Hukum dari Universitas Tulungagung. Sebagai seorang advokat yang
                         terampil, beliau telah menangani berbagai kasus hukum yang kompleks di berbagai pengadilan di seluruh

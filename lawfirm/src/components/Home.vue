@@ -149,7 +149,7 @@ export default {
             isVisible: false,
             tim: [
                 { tim: 'tim1', name: 'Muchamad Ilham Tantowi. S.H., M.H' },
-                { tim: 'tim2', name: 'Pak Arif. S.H., M.H' }
+                { tim: 'tim2', name: 'Arif Fathkurrohman, S.H.' }
             ],
         }
     },
