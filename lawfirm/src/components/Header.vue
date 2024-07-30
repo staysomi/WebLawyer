@@ -21,8 +21,15 @@ const setCurrentPath = () => {
     content.value = 4
   }
 }
-onMounted(setCurrentPath)
 
+const handleScroll = () => {
+  isSidebarOpen.value = false
+}
+
+onMounted(setCurrentPath)
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
 const content = ref()
 const contentChange = (num) => {
   content.value = num
@@ -63,9 +70,10 @@ const contentChange = (num) => {
       </svg>
     </button>
     <!-- Sidebar -->
-    <div v-if="isSidebarOpen" class="w-4/5 h-full fixed text-white right-0 bg-gray-800 z-10">
+    <div v-if="isSidebarOpen" class="w-4/5 h-screen fixed text-white right-0 bg-gray-800 z-10">
       <div class="flex items-center justify-between p-4 bg-gray-900">
         <img src="../assets/img/icon.png" class="w-12 h-auto my-2">
+        <div>Tantowi Law</div>
         <button @click="toggleSidebar" class="text-gray-400 hover:text-white focus:outline-none md:hidden">
           <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"></path>
@@ -90,7 +98,8 @@ const contentChange = (num) => {
         </router-link>
       </div>
       <WA>
-        <div class=" !bg-transparent flex border-2 border-gray-400 items-center w-fit ml-4 rounded-full min-h-4 mt-8 px-6 py-2">
+        <div
+          class=" !bg-yellow-500 flex border-2 border-white items-center w-fit ml-4 rounded-full min-h-4 mt-8 px-6 py-2">
           <div class="h-fit">0812-999-9999<br>
             <p class="text-xs m-auto">Mulai Konsultasi</p>
           </div>
@@ -106,7 +115,7 @@ const contentChange = (num) => {
 <script>
 
 export default {
-  name: 'Header'
+  name: 'Header',
 }
 </script>
 

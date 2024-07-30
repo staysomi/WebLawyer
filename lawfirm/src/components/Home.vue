@@ -115,7 +115,7 @@ import Popup from './PopupBio.vue'
             <img src="../assets/img/kenapaharus.jpg" alt="">
             <div class="text-black md:py-8 md:px-16 mt-4">
                 <p class="text-md">Mengapa Harus Ke TantowiLaw</p>
-                <p class="text-xl w-fit mt-4 mb-2">Advokat Profeiaonal, Jujur, Tegak Lurus dan Berintegritas Tinggi</p>
+                <p class="text-xl w-fit mt-4 mb-2">Advokat Profesional, Jujur, Tegak Lurus dan Berintegritas Tinggi</p>
                 <Dropdown title="1. Jujur" class="cursor-pointer md:mt-4">
                     <li class="md:text-medium ml-8 mt-2">Jujur menangani perkara</li>
                     <li class="md:text-medium ml-8 mt-4">Jujur dalam menyampaikan analisa perkara kepada klien</li>
